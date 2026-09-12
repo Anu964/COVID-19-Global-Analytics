@@ -1,18 +1,27 @@
 # 🦠 COVID-19 Global Analytics
 
+> An interactive Power BI dashboard analyzing global COVID-19 cases, deaths, testing, and vaccination trends using Python, Pandas, and real-world data.
+
+## 📊 Dashboard Preview
+
+![COVID-19 Global Analytics Dashboard](./Dashbored.PNG)
+
 ## 📌 Project Overview
 
-The COVID-19 Data Analysis Dashboard is a data analytics project developed to analyze the global impact of COVID-19 using real-world data. The project focuses on understanding trends in COVID-19 cases, deaths, testing, and vaccinations across different countries and continents.
+The COVID-19 Global Analytics project focuses on analyzing global COVID-19 data to understand the spread and impact of the pandemic across different countries and continents.
 
-The data was cleaned and analyzed using Python and Pandas, and an interactive dashboard was created using Power BI to present key insights through clear and easy-to-understand visualizations.
+The project covers the complete data analytics process, starting from data cleaning and preparation in Python to exploratory analysis and interactive visualization in Power BI.
+
+The dashboard provides a clear view of COVID-19 cases, deaths, testing, vaccination progress, and country-wise trends.
 
 ## 🎯 Objectives
 
 - Analyze COVID-19 cases and deaths over time
-- Compare COVID-19 impact across countries and continents
+- Compare the impact of COVID-19 across countries and continents
 - Analyze testing and vaccination trends
-- Identify important patterns and trends
-- Create an interactive Power BI dashboard
+- Identify patterns and trends in the data
+- Explore population and demographic indicators
+- Build an interactive Power BI dashboard
 - Present meaningful insights through data visualization
 
 ## 🛠️ Tools & Technologies
@@ -25,53 +34,131 @@ The data was cleaned and analyzed using Python and Pandas, and an interactive da
 - **Power BI**
 - **GitHub**
 
-## 📊 Dashboard Features
+## 📂 Dataset
 
-- Total COVID-19 Cases
-- Total Deaths
-- New Cases and Deaths
-- Country-wise Analysis
-- Continent-wise Comparison
-- Testing Analysis
-- Vaccination Analysis
-- COVID-19 Trends Over Time
-- Interactive Filters and Visualizations
+The project uses a global COVID-19 dataset containing information related to cases, deaths, testing, vaccinations, population, and demographic indicators.
 
-## 🧹 Data Cleaning & Analysis
+### Dataset Overview
 
-The dataset was processed using Python and Pandas. The main steps included:
+- **Original records:** 429,435
+- **Original columns:** 67
+- **Columns selected for analysis:** 25
+- **Duplicate records found:** 0
 
+### Main Variables
+
+- `location`
+- `continent`
+- `date`
+- `total_cases`
+- `new_cases`
+- `total_deaths`
+- `new_deaths`
+- `total_tests`
+- `new_tests`
+- `positive_rate`
+- `tests_per_case`
+- `total_vaccinations`
+- `people_vaccinated`
+- `people_fully_vaccinated`
+- `total_boosters`
+- `new_vaccinations`
+- `population`
+- `population_density`
+- `gdp_per_capita`
+- `life_expectancy`
+- `hospital_beds_per_thousand`
+- `human_development_index`
+
+## 🧹 Data Cleaning & Preparation
+
+The dataset was cleaned and prepared using Python and Pandas.
+
+The main steps included:
+
+- Loading and exploring the raw dataset
 - Selecting relevant columns
 - Checking data types
 - Checking duplicate records
-- Handling missing values
+- Analyzing missing values
 - Removing records without continent information
-- Converting dates into the correct format
-- Preparing the cleaned dataset for visualization and analysis
+- Converting the date column into datetime format
+- Preparing the cleaned data for analysis and visualization
 
-The original dataset contained approximately **429K records and 67 columns**. After cleaning and selecting relevant fields, **25 columns** were used for the analysis.
+A sample of the cleaned dataset has been included in the repository for reference.
 
-## 📈 Key Insights
+## 📈 Dashboard Analysis
 
-The dashboard helps analyze:
+The Power BI dashboard provides an interactive view of:
 
-- Growth of COVID-19 cases over time
-- Countries with higher case and death counts
+### 🦠 COVID-19 Cases
+- Total cases
+- New cases
+- Case trends over time
+- Country-wise comparison
+- Continent-wise comparison
+
+### ⚰️ Deaths
+- Total deaths
+- New deaths
+- Death trends
+- Country-wise comparison
+
+### 🧪 Testing
+- Total tests
+- New tests
+- Positive test rate
+- Tests per case
+- Country-wise testing comparison
+
+### 💉 Vaccination
+- Total vaccinations
+- People vaccinated
+- Fully vaccinated population
+- Booster vaccinations
+- Vaccination trends
+
+### 🌍 Population & Demographics
+- Population
+- Population density
+- GDP per capita
+- Life expectancy
+- Hospital beds per thousand
+- Human Development Index
+
+## 💡 Key Insights
+
+The dashboard enables analysis of:
+
+- COVID-19 case and death trends over time
+- Countries with higher reported cases and deaths
 - Differences in COVID-19 impact across continents
 - Testing patterns across countries
 - Vaccination progress over time
-- Relationship between cases and deaths
+- Relationship between reported cases and deaths
+- Differences in population and demographic indicators
 
-## 📁 Project Files
+## 🔄 Project Workflow
 
-- `COVID-19_Global_Analytics.pbix` – Power BI dashboard
-- `Dashboard.PNG` – Dashboard preview
-- `covid_analysis.ipynb` – Python data cleaning and analysis
-- `covid_cleaned_sample.csv` – Cleaned sample dataset
-- `latest_data.csv` – Supporting dataset
+**Raw Data → Data Cleaning → Exploratory Analysis → Data Preparation → Power BI Visualization → Dashboard → Insights**
+
+## 📁 Project Structure
+
+
+COVID-19-Global-Analytics/
+│
+├── COVID-19_Global_Analytics.pbix
+├── Dashbored.PNG
+├── covid_analysis.ipynb
+├── covid_cleaned_sample.csv
+├── latest_data.csv
+└── README.md
+
 
 ## 👩‍💻 Author
 
-**Anu** | MCA Graduate | Aspiring Data Analyst | [LinkedIn](https://www.linkedin.com/in/anuchauhan/) | [GitHub](https://github.com/Anu964)
+**Anu**  
+MCA Graduate | Aspiring Data Analyst
+
 
 ⭐ If you found this project useful, feel free to star the repository!
